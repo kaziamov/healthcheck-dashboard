@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Healthcheck Dashboard</title>
+</head>
+<body>
+    <h1>Healthcheck Dashboard</h1>
+    <label for="interval">Интервал (сек): </label>
+    <select id="interval">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="60">60</option>
+        <option value="180">180</option>
+    </select>
+    <button id="refresh">Обновить сейчас</button>
+    <table border="1" id="status-table">
+        <thead>
+            <tr><th>Сайт</th><th>Статус</th><th>Status Code</th></tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+    </table>
+    <script src="dashboard.js"></script>
+</body>
+</html>
