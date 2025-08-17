@@ -3,5 +3,7 @@ services:
   healthcheck-dashboard:
     build: .
     restart: always
+    volumes:
+      - ./paths.txt:/app/paths.txt
     ports:
       - "8080:8080"
